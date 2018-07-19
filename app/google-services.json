@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1025756299843",
+    "firebase_url": "https://safetytracker-d480f.firebaseio.com",
+    "project_id": "safetytracker-d480f",
+    "storage_bucket": "safetytracker-d480f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025756299843:android:60a3953712e44ec8",
+        "android_client_info": {
+          "package_name": "com.sushinamu.safetytracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025756299843-72oa58s3l71u6h9hsq0q0k6klsf7b2vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sushinamu.safetytracker",
+            "certificate_hash": "fda4b44daa9ae88d171f9433ab69374f652b2296"
+          }
+        },
+        {
+          "client_id": "1025756299843-qldvka5ap2mrprbfgvv5qf9mvruajcj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_-wLkZaIbkzSTOqbwU0eJOL3aX3Q1YUg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025756299843-qldvka5ap2mrprbfgvv5qf9mvruajcj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
