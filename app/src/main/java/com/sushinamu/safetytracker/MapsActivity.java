@@ -73,7 +73,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         for (int s : arrayOfString) {
             LatLng sydney = new LatLng(34, s);
-            mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+            mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in"+s));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         }
 
