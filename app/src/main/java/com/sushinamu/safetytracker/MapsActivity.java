@@ -22,6 +22,8 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    Double myLatitude = null;
+    Double myLongitude = null;
 
     android.support.v7.widget.Toolbar toolbar;
 
@@ -68,14 +70,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // Add a marker in Sydney and move the camera
 
-        int[] arrayOfString = {23,44,12,44,55};
+        //int[] arrayOfString = {23,45,12,44,55};
 
 
-        for (int s : arrayOfString) {
-            LatLng sydney = new LatLng(34, s);
-            mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in"+s));
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        }
+        //for (int s : arrayOfString) {
+            LatLng myLocation = new LatLng(myLatitude,myLongitude);
+            mMap.addMarker(new MarkerOptions().position(myLocation).title("Marker in"+myLocation));
+            mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
+        //}
 
 
         statusCheck();
