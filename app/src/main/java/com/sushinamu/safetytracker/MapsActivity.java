@@ -11,7 +11,9 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
+import android.view.MenuItem;
 
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -22,8 +24,10 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+
     Double myLatitude = null;
     Double myLongitude = null;
+    private GoogleApiClient googleApiClient;
 
     android.support.v7.widget.Toolbar toolbar;
 
@@ -55,6 +59,17 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         return super.onCreateOptionsMenu(menu);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id=item.getItemId();
+        switch (item.getItemId()){
+            case (R.id.login):
+
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
+
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -74,7 +89,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         //for (int s : arrayOfString) {
-            LatLng myLocation = new LatLng(myLatitude,myLongitude);
+            LatLng myLocation = new LatLng(27.6707,85.3402);
             mMap.addMarker(new MarkerOptions().position(myLocation).title("Marker in"+myLocation));
             mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
         //}
